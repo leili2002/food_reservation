@@ -1,0 +1,3 @@
+C:/Users/Administrator/CLionProjects/food_reservation/cmake-build-debug/CMakeFiles/food_reservation.dir
+C:/Users/Administrator/CLionProjects/food_reservation/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Administrator/CLionProjects/food_reservation/cmake-build-debug/CMakeFiles/rebuild_cache.dir

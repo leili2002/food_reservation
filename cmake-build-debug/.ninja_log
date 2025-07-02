@@ -1,0 +1,25 @@
+# ninja log v5
+6	425	7731534465240752	CMakeFiles/food_reservation.dir/library.c.obj	4f9521264831ce0d
+2	124	7731542386691940	CMakeFiles/food_reservation.dir/repository/student.c.obj	b78092c8f6eed48c
+7	132	7731542386751760	CMakeFiles/food_reservation.dir/logic/responsible.c.obj	a4a2754b29fc269c
+1	60	7731546233518703	CMakeFiles/food_reservation.dir/logic/student.c.obj	66765c7bb6286474
+1147	2300	7731547513301778	food_reservation.exe	18c83994485c9925
+16	129	7731542386716379	CMakeFiles/food_reservation.dir/repository/responsible.c.obj	228db3de589edec
+4	1147	7731547504186497	CMakeFiles/food_reservation.dir/main.c.obj	5f8af47371b78f5e
+8	233	7731554404011464	CMakeFiles/food_reservation.dir/logic/student.c.obj	66765c7bb6286474
+234	757	7731554409085786	food_reservation.exe	18c83994485c9925
+2	76	7731554893539388	CMakeFiles/food_reservation.dir/main.c.obj	5f8af47371b78f5e
+76	151	7731554894199813	food_reservation.exe	18c83994485c9925
+2	72	7731555017759637	CMakeFiles/food_reservation.dir/main.c.obj	5f8af47371b78f5e
+73	155	7731555018597865	food_reservation.exe	18c83994485c9925
+2	73	7731555311501496	CMakeFiles/food_reservation.dir/main.c.obj	5f8af47371b78f5e
+73	145	7731555312226651	food_reservation.exe	18c83994485c9925
+2	81	7731555685992113	CMakeFiles/food_reservation.dir/main.c.obj	5f8af47371b78f5e
+82	155	7731555686696737	food_reservation.exe	18c83994485c9925
+2	80	7731557186863738	CMakeFiles/food_reservation.dir/main.c.obj	5f8af47371b78f5e
+80	162	7731557187561632	food_reservation.exe	18c83994485c9925
+1	80	7731558102310525	CMakeFiles/food_reservation.dir/main.c.obj	5f8af47371b78f5e
+81	157	7731558103019360	food_reservation.exe	18c83994485c9925
+1	71	7731565720936764	CMakeFiles/food_reservation.dir/logic/student.c.obj	66765c7bb6286474
+5	86	7731565721062806	CMakeFiles/food_reservation.dir/main.c.obj	5f8af47371b78f5e
+87	187	7731565722028899	food_reservation.exe	18c83994485c9925
