@@ -34,3 +34,13 @@ char *login_responsible(char *userName, char *password, int *j) {
     } return ("login failed");
 }
 
+char* charge_Account(int studentnum,float charg){
+    int size=0;
+    struct student* student_array= load_student(&size);
+    for(int i =0;i<size;i++){
+        if (student_array[i].studentNum==studentnum){
+            student_array[i].cash=charg;
+            return"charged";
+        }
+    }return"unsuccessful";
+}

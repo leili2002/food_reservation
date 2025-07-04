@@ -6,6 +6,7 @@
 #include "../repository/repository.h"
 #include<stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 void signup_student(struct student new_student) {
     int size = 0;
@@ -67,4 +68,137 @@ char *check_pass(char *pass, int *password) {
     }
     (*password) = 1;
     return "password saved";
+}
+
+char * delete_student( int student_number) {
+    int size_student = 0;
+    int index=0;
+    struct student *arr= load_student(&size_student);
+
+
+    for (int i = 0; i < size_student; i++) {
+        if (arr[i].studentNum == student_number) {
+            index = i;
+            break;
+        }
+    }
+    if (index != 0) {//means it found {
+        for (int i = index; i < size_student - 1; i++) {
+            arr[i] = arr[i + 1];
+        }
+
+        size_student--;
+        saveStudents(arr,size_student);
+        return "delete successfully";
+    }
+
+    return"failed";
+}
+
+
+char* deActive(int student_num){
+    int size=0;
+    struct student * array= load_student(&size);
+    for (int i =0;i<=size;i++){
+        if( array[i].studentNum==student_num){
+            array[i].status=0;
+            saveStudents(array,size);
+            free(array);
+            return "%s deactive successfully";
+
+        }
+    }
+    return "failed";
+}
+
+
+char * change_password_by_student(int student_num,char *current_pass,char *new_password){
+    int size;
+    struct student*student_array= load_student(&size);
+    for (int i = 0; i < size; i++) {
+        if (student_array[i].studentNum == student_num){
+            if (strcmp(student_array[i].password, (const char *)current_pass) == 0) {
+                strcpy(student_array[i].password,new_password);
+                saveStudents(student_array,size);
+                return "change successfully";
+            }
+        }
+    }
+    return "failed";
+}
+
+
+char* change_password(int student_number,char* new_pass){
+    int size=0;
+    struct student *student_array = load_student(&size);
+    for (int i = 0; i < size; i++) {
+        if (student_array[i].studentNum == student_number){
+            strcpy(student_array[i].password, new_pass);
+            saveStudents(student_array,size);
+            return "change successfully";
+        }
+    }
+    return "failed";
+
+}
+
+
+char* check_student_status(int *flag) {
+    int size = 0;
+    struct student *student_array = load_student(&size);
+    for (int i = 0; i < size; i++) {
+        if (student_array[i].status == 0){
+            char *result = malloc(256);
+            snprintf(result, 256,
+                     "name=%s\n"
+                     "lastname=%s\n"
+                     "studentnum=%s\n",
+                     student_array[i].name,
+                     student_array[i].lastname,
+                     student_array[i].studentNum);
+            *flag=1;
+            return result;
+
+        }
+    }  *flag=0;
+    return NULL;
+}
+
+
+char* active_student (int student_number){
+    int size=0;
+    struct student *student_array = load_student(&size);
+    for (int i = 0; i < size; i++) {
+        if (student_array[i].studentNum == student_number){
+            student_array[i].status=1;
+            saveStudents(student_array,size);
+            char *result = malloc(256);
+            snprintf(result, 256,
+                     "name=%s\n"
+                     "lastname=%s\n"
+                     "studentnum=%s\n",
+                     student_array[i].name,
+                     student_array[i].lastname,
+                     student_array[i].studentNum);
+            return result;
+        }
+    }return "wrong studentnum";
+
+
+}
+
+int   search_student(int j,int *gender){
+    int size=0;
+    struct student *student_array = load_student(&size);
+    *gender=student_array[j].gender;
+    int student_num=student_array[j].studentNum;
+    return student_num ;
+}
+
+
+char* charge_own_account(int index,float charg){
+    int size=0;
+    struct student *student_array = load_student(&size);
+    student_array[index].cash=charg;
+    return "charged";
 }
