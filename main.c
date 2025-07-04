@@ -275,6 +275,13 @@ void responsibleMenuHandler(j) {
             }
         }
     }
+    if (responsible_choose == food_setting) {
+        printf("1_define_self\n"
+               "2_define_foods for self(if you dont define self please define it first\n"
+               "3_reports"
+               "4-sign_out");
+
+    }
 }
 
 void studentMenuHandler(j) {
