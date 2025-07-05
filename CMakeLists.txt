@@ -11,4 +11,4 @@ add_executable(food_reservation
         logic/logic.h
         logic/student.c
         logic/responsible.c
-        main.c)
+        main.c logic/food.c repository/food.c)

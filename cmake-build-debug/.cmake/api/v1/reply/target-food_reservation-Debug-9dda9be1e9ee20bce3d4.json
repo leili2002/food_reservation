@@ -60,7 +60,9 @@
 				3,
 				6,
 				7,
-				8
+				8,
+				9,
+				10
 			]
 		}
 	],
@@ -102,7 +104,9 @@
 				3,
 				6,
 				7,
-				8
+				8,
+				9,
+				10
 			]
 		},
 		{
@@ -166,6 +170,18 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "main.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "logic/food.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "repository/food.c",
 			"sourceGroupIndex" : 0
 		}
 	],
