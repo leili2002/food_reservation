@@ -85,6 +85,18 @@ build CMakeFiles/food_reservation.dir/main.c.obj: C_COMPILER__food_reservation_D
   OBJECT_DIR = CMakeFiles\food_reservation.dir
   OBJECT_FILE_DIR = CMakeFiles\food_reservation.dir
 
+build CMakeFiles/food_reservation.dir/logic/food.c.obj: C_COMPILER__food_reservation_Debug C$:/Users/Administrator/CLionProjects/food_reservation/logic/food.c || cmake_object_order_depends_target_food_reservation
+  DEP_FILE = CMakeFiles\food_reservation.dir\logic\food.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\food_reservation.dir
+  OBJECT_FILE_DIR = CMakeFiles\food_reservation.dir\logic
+
+build CMakeFiles/food_reservation.dir/repository/food.c.obj: C_COMPILER__food_reservation_Debug C$:/Users/Administrator/CLionProjects/food_reservation/repository/food.c || cmake_object_order_depends_target_food_reservation
+  DEP_FILE = CMakeFiles\food_reservation.dir\repository\food.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\food_reservation.dir
+  OBJECT_FILE_DIR = CMakeFiles\food_reservation.dir\repository
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target food_reservation
@@ -93,7 +105,7 @@ build CMakeFiles/food_reservation.dir/main.c.obj: C_COMPILER__food_reservation_D
 #############################################
 # Link the executable food_reservation.exe
 
-build food_reservation.exe: C_EXECUTABLE_LINKER__food_reservation_Debug CMakeFiles/food_reservation.dir/library.c.obj CMakeFiles/food_reservation.dir/repository/student.c.obj CMakeFiles/food_reservation.dir/repository/responsible.c.obj CMakeFiles/food_reservation.dir/logic/student.c.obj CMakeFiles/food_reservation.dir/logic/responsible.c.obj CMakeFiles/food_reservation.dir/main.c.obj
+build food_reservation.exe: C_EXECUTABLE_LINKER__food_reservation_Debug CMakeFiles/food_reservation.dir/library.c.obj CMakeFiles/food_reservation.dir/repository/student.c.obj CMakeFiles/food_reservation.dir/repository/responsible.c.obj CMakeFiles/food_reservation.dir/logic/student.c.obj CMakeFiles/food_reservation.dir/logic/responsible.c.obj CMakeFiles/food_reservation.dir/main.c.obj CMakeFiles/food_reservation.dir/logic/food.c.obj CMakeFiles/food_reservation.dir/repository/food.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\food_reservation.dir
